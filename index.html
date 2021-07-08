@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs with  some JavaScript Built-in Functions</title>
+</head>
+<body style="background-color: burlywood;">
+ <h1 style="background-color: blanchedalmond; text-align: center;">Practicising with Some Built-in Functions of JavaScript</h1>
+ <button id="btn">Enter your Name</button>
+ <button id="btn1">Enter your Name</button>
+ <button id="btn2"> Lesser Number</button>
+ <button id="btn3"> Greater Number</button>
+ <button id="btn4">Less or Equal</button>
+
+
+
+ <script>
+   let btn = document.getElementById("btn");
+   let btn1 = document.getElementById("btn1");
+   let btn2 = document.getElementById("btn2");
+   let btn3 = document.getElementById("btn3");
+   let btn4 = document.getElementById("btn4");
+
+btn.addEventListener("click", welcome);
+btn1.addEventListener("click", greeting);
+btn2.addEventListener("click", button);
+btn3.addEventListener("click", greaterNumber);
+btn4.addEventListener("click", lessOrEqual);
+
+function welcome(){
+ let name = prompt("Enter your Name");
+alert(`${name}, you are welcome to our page!`);
+}
+
+
+function greeting(){
+  let username = prompt("kindly enter your name");
+  if(username == "Alice" || username == "alice"){
+    alert(`Greetings to you, ${username}`);
+  }
+  else if(username == "Bob" || username == "bob"){
+    alert(`Greetings to you, ${username}`);
+  }
+else{
+  alert("Greetings to you!");
+}
+
+}
+
+
+function button(){
+ if(4 < 410){
+   alert("Not fake news!");
+ }else{
+   alert("It is a Fake news")
+ }
+}
+
+function greaterNumber(){
+  if(5 > 6){
+    alert("5 is the greates!");
+  }else{
+    alert("5 is not the greatest!");
+  }
+}
+
+function lessOrEqual(){
+  if(3 <= 3){
+    alert("JavaScript is awesome!");
+  }else{
+    alert("JavaScript is not awesome!");
+  }
+}
+ </script>
+</body>
+</html>
